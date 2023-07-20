@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Similar Team Mates</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Find Similar Team Mates</h1>
+    <form action="/predict" method="post">
+        <label for="description">Enter Description:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br>
+        <input type="submit" value="Find Similar Team Mates">
+    </form>
+</body>
+</html>
